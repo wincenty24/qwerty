@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qwerty.Android", "qwerty\qwerty.Android\qwerty.Android.csproj", "{5ED95BC9-8D56-4A5F-AFAF-3D1AAD6187A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qwerty", "qwerty\qwerty\qwerty.csproj", "{74B325F1-7F7E-4C65-9B14-58C9A0E346BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5ED95BC9-8D56-4A5F-AFAF-3D1AAD6187A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ED95BC9-8D56-4A5F-AFAF-3D1AAD6187A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ED95BC9-8D56-4A5F-AFAF-3D1AAD6187A1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5ED95BC9-8D56-4A5F-AFAF-3D1AAD6187A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ED95BC9-8D56-4A5F-AFAF-3D1AAD6187A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ED95BC9-8D56-4A5F-AFAF-3D1AAD6187A1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{74B325F1-7F7E-4C65-9B14-58C9A0E346BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74B325F1-7F7E-4C65-9B14-58C9A0E346BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74B325F1-7F7E-4C65-9B14-58C9A0E346BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74B325F1-7F7E-4C65-9B14-58C9A0E346BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D29D9BEC-1ECB-4E9F-BBE5-D8BC83B0A690}
+	EndGlobalSection
+EndGlobal

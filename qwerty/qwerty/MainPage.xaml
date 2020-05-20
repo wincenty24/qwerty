@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" 
+             xmlns:local="clr-namespace:qwerty"
+            Appearing="TabbedPage_Appearing"
+            Disappearing="TabbedPage_Disappearing"
+             x:Class="qwerty.MainPage">
+    <ContentPage Title="Mapa" xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
+        <StackLayout x:Name="Main_Page_Name" >
+
+            <maps:Map x:Name="Mapka"  />
+
+            <Switch IsToggled="false" ThumbColor="LightYellow" x:Name="switch_wlacz_caly_program" Toggled="Switch_Toggled"  HorizontalOptions="Center" Grid.Row="0"   Grid.Column="1"  VerticalOptions="Center"/>
+
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Ustawienia" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" >
+        <StackLayout>
+            <Grid>
+
+            </Grid>
+            <Label Text="ZOOM :" x:Name="Zoom_label"/>
+            <Slider  x:Name="Slider_zoom" Minimum="0" Maximum="300" MinimumTrackColor="Green" ValueChanged="Slider_zoom_ValueChanged"/>
+            <Label Text=" " />
+            <Label Text=" " />
+            <Grid>
+                <Label Text="Pokazać wszystkie pojazdy wregionie?" HorizontalOptions="Start" />
+                <Switch x:Name="switch_show_me_all_ambulance_switch" IsToggled="false" HorizontalOptions="End" Toggled="Switch_show_me_all_ambulance_switch_Toggled"/>
+            </Grid>
+            <Label Text=" " />
+            <Label Text=" " />
+            <Grid>
+                <Label Text="Wibracje" HorizontalOptions="Start" />
+                <Switch x:Name="switch_wibrations" IsToggled="false" HorizontalOptions="End" Toggled="Switch_wibrations_Toggled" />
+            </Grid>
+            <Label Text=" " />
+            <Label Text=" " />
+            <Grid>
+                <Label Text="Powiadomienia" HorizontalOptions="Start" />
+                <Switch x:Name="switch_notifications" IsToggled="false" HorizontalOptions="End" Toggled="Switch_notifications_Toggled" />
+            </Grid>
+            <Button HorizontalOptions="Center" Text="Zapisz" x:Name="Save_Buton" Clicked="Save_Buton_Clicked" />
+            <Grid>
+                <forms:AnimationView x:Name="animationView" OnFinish="Handle_OnFinish"  Animation="433-checked-done.json" Loop="False" AutoPlay="False" HeightRequest="0" WidthRequest="0" PlaybackStartedCommand="{Binding PlayingCommand}" PlaybackFinishedCommand="{Binding FinishedCommand}" />
+            </Grid>
+
+        </StackLayout>
+    </ContentPage>
+
+</TabbedPage>
